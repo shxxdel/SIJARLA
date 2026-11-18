@@ -1,4 +1,4 @@
-# SIJARLA 2026
+# SIJARLA 
 
 **SIJARLA** adalah singkatan dari **Sistem Informasi Jaga Rimba dan Lahan**. Portal edukasi independen ini mengangkat kebakaran hutan dan lahan (karhutla) di Indonesia sebagai isu lingkungan global. Pengunjung bisa melihat deteksi panas satelit, membaca laporan kejadian, dan mempelajari dampak kabut asap lintas negara.
 

@@ -374,7 +374,7 @@ p { line-height: 1.65; }
   margin-top: 1.15rem;
 }
 
-/* Article Detail: Executive Summary Lead Box */
+/* Article Detail */
 .article-lead-box {
   background: #fff;
   border: 1px solid var(--line);
@@ -387,7 +387,7 @@ p { line-height: 1.65; }
   color: var(--ink);
 }
 
-/* Article Detail: Interactive Timeline for Incident Chronology */
+/* Article Detail */
 .incident-timeline {
   position: relative;
   padding-left: 2rem;
@@ -495,7 +495,7 @@ p { line-height: 1.65; }
   margin-bottom: 0;
 }
 
-/* Article Detail: Sidebar Incident Factsheet (Model Sipongi) */
+/* Article Detail */
 .incident-factsheet {
   background: #181c21;
   color: #dedbd7;

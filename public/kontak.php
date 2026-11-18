@@ -30,7 +30,6 @@ require __DIR__ . '/../app/header.php';
     </div>
   </div>
 
-  <!-- Kanal Resmi Grid -->
   <div class="section-head mb-4">
     <div>
       <p class="eyebrow">KANAL RESMI</p>
@@ -39,7 +38,7 @@ require __DIR__ . '/../app/header.php';
   </div>
 
   <div class="row g-4 mb-5">
-    <!-- Posko Kehutanan -->
+
     <div class="col-md-6">
       <div class="kontak-card h-100">
         <div class="kontak-card-icon" aria-hidden="true">&#127795;</div>
@@ -58,7 +57,6 @@ require __DIR__ . '/../app/header.php';
       </div>
     </div>
 
-    <!-- Gakkum -->
     <div class="col-md-6">
       <div class="kontak-card h-100">
         <div class="kontak-card-icon" aria-hidden="true">&#9878;</div>
@@ -76,7 +74,6 @@ require __DIR__ . '/../app/header.php';
       </div>
     </div>
 
-    <!-- BPBD -->
     <div class="col-md-6">
       <div class="kontak-card h-100">
         <div class="kontak-card-icon" aria-hidden="true">&#127968;</div>
@@ -95,7 +92,6 @@ require __DIR__ . '/../app/header.php';
       </div>
     </div>
 
-    <!-- Tim SIJARLA -->
     <div class="col-md-6">
       <div class="kontak-card kontak-card-team h-100">
         <div class="kontak-card-icon" aria-hidden="true">&#128187;</div>
@@ -120,7 +116,6 @@ require __DIR__ . '/../app/header.php';
     </div>
   </div>
 
-  <!-- Peta Navigasi Cepat -->
   <div class="section-head mb-4">
     <div>
       <p class="eyebrow">NAVIGASI CEPAT</p>

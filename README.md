@@ -1,42 +1,28 @@
-# SIJARLA
+# SIJARLA 2026
 
-SIJARLA (Sistem Informasi Jaga Rimba dan Lahan) adalah portal edukasi karhutla Indonesia untuk tema **Isu Lingkungan Global**. Situs memuat beranda, tentang, artikel dengan detail per kejadian, kontak, dan peta GIS.
+**SIJARLA** adalah singkatan dari **Sistem Informasi Jaga Rimba dan Lahan**. Portal edukasi independen ini mengangkat kebakaran hutan dan lahan (karhutla) di Indonesia sebagai isu lingkungan global. Pengunjung bisa melihat deteksi panas satelit, membaca laporan kejadian, dan mempelajari dampak kabut asap lintas negara.
 
-## Nama tim dan anggota
+**Tim BLARATAN** · Fies Medhali Anugrahsyah dan Risma Hidayati, Politeknik Negeri Indramayu
 
-- Nama tim: BLARATAN
-- Anggota: Fies Medhali Anugrahsyah, Risma Hidayati
-- 
+**TECHNO VERSARY VOL. II** · EcoDigital for Environment · Subtema Isu Lingkungan Global
 
-Ganti `namaTim` pada nama folder/repositori `webdesign_namaTim_technoversary_vol.II` sebelum pengumpulan.
+[Lihat website SIJARLA](https://sijarla.vercel.app/)
 
-## Instalasi dan cara menjalankan
+## Isi Website
 
-1. Siapkan PHP 8.1+ (PHP CLI atau PHP dari XAMPP) dan koneksi internet untuk Bootstrap, font, Leaflet, dan peta dasar.
-2. Buka terminal pada folder proyek.
-3. Jalankan `php -S 127.0.0.1:8077 -t public`.
-4. Buka [http://127.0.0.1:8077](http://127.0.0.1:8077). Hentikan server lokal dengan Ctrl+C.
+- **Beranda** menampilkan informasi terkini dan pilihan laporan terbaru.
+- **Tentang** memuat tujuh topik edukasi, dari pengenalan karhutla hingga pencegahan dan metodologi data.
+- **Artikel** berisi arsip kejadian dan laporan kabut asap lintas negara, dengan pencarian serta filter kategori, pulau, dan bulan.
+- **Peta** menampilkan deteksi panas satelit per bulan. Pengunjung bisa melihat waktu, koordinat, dan tingkat keyakinan tiap deteksi, serta membaca rekap kejadian per provinsi.
+- **Kontak** menyediakan tautan ke kanal resmi pelaporan asap atau titik api serta email tim.
 
-Jika PHP belum ada di PATH, gunakan terminal Laragon atau panggil `php.exe` dengan path instalasi lengkap. Contoh PowerShell untuk Laragon pada komputer ini:
+## Data dan Sumber
 
-```powershell
-& "C:/laragon/bin/php/php-8.3.33-Win32-vs16-x64/php.exe" -S 127.0.0.1:8077 -t public
-```
+| Data | Cakupan | Sumber |
+| --- | --- | --- |
+| Arsip kejadian karhutla | 13 laporan pilihan dari 7 provinsi hingga 16 November 2026, dengan informasi lokasi, luas terbakar, kronologi, dan penanganan | BNPB |
+| Artikel kabut asap lintas negara | 3 artikel tentang persebaran asap di Asia Tenggara | ASEAN Specialised Meteorological Centre (ASMC) dan National Environment Agency (NEA) Singapura |
+| Deteksi panas satelit | Pengamatan VIIRS NOAA-20 dari Januari hingga 16 November 2026 (UTC) di Indonesia dan sekitarnya | [NASA FIRMS/GIBS](https://firms.modaps.eosdis.nasa.gov/content/tutorials/gibs/) |
+| Peta dasar | Citra satelit dan peta jalan | Esri World Imagery dan OpenStreetMap |
 
-Untuk hosting PHP, arahkan document root ke folder `public/`.
-
-Isi variabel lingkungan `SIJARLA_EMAIL` dengan alamat email tim sebelum menjalankan PHP untuk menampilkannya di halaman Kontak.
-
-## Struktur proyek
-
-- `app/` berisi konfigurasi, fungsi pemformatan dan komponen PHP bersama.
-- `data/incidents.json` berisi arsip kejadian pilihan dengan tautan laporan BNPB.
-- `data/report-details.json` memuat kronologi, dampak dan penanganan untuk 13 artikel.
-- `data/regional-articles.json` memuat artikel tentang penyebaran asap lintas negara dari sumber ASMC dan NEA.
-- `public/` berisi halaman PHP terpisah dan aset CSS, gambar, serta JavaScript.
-- `public/assets/js/map.js` mengatur peta dasar. `hotspots.js` memuat deteksi per bulan dan mengelompokkan titik berdekatan dengan Supercluster.
-
-## Data, integrasi, dan aset
-
-- Peta Leaflet memakai Esri World Imagery dan tile vektor harian VIIRS NOAA-20 dari [NASA FIRMS/GIBS](https://firms.modaps.eosdis.nasa.gov/content/tutorials/gibs/). Pilih bulan untuk memuat deteksi Januari hingga 16 November 2026 (UTC) pada area Indonesia dan sekitarnya. Warna menunjukkan kategori keyakinan deteksi. Popup menampilkan waktu, koordinat, dan nama wilayah terdekat dari [OpenStreetMap/Nominatim](https://www.openstreetmap.org/copyright) jika tersedia.
-- Bootstrap (MIT), Leaflet (BSD-2-Clause), DM Sans dan Barlow Condensed (SIL Open Font License). Gambar utama dibuat dengan ImageGen dan ditandai sebagai ilustrasi pada beranda.
+Deteksi satelit menunjukkan anomali panas yang perlu diperiksa di lapangan. Satu lokasi bisa terdeteksi beberapa kali. Rekap provinsi dihitung dari arsip laporan kejadian SIJARLA.
